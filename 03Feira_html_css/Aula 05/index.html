@@ -1,0 +1,365 @@
+<html>
+    <head>
+        <title>Aula 05</title>
+    </head>
+    <body>
+
+        <!-- 
+            <table> - define o inicio de uma tabela 
+                -Propriedades da Table
+                    <table width> - define a largura de uma tabela
+                            height - define a altura de uma tabela
+                            border - define a espessura de uma borda
+                            cellspacing - define um espaçamento entre as celulas
+                            cellpadding - define um espaçamento interno entre as celulas
+                            bgcolor - define uma cor de fundo da tabela inteira
+                            backgroun - define a imagem no fundo da tabela
+                        
+            </table> - difine o final de uma tabela
+
+                <tr> - define a criação de uma linha
+                    -Propriedades da linha
+                    -Pode no max aumentar o tamanho da linha
+                    <tr height> - define o tamanho da linha
+                    bgcolor - define uma cor de fundo na linha
+                    backgroun - define a imagem no fundo da linha
+
+                    -Dentro da tag tr
+                    <td> - define a criação de uma coluna (celula)
+                        -A unica propriedade possivel é aumentar/diminuir a largura da coluna
+                        <td width> - define a largura da coluna
+                        bgcolor - define uma cor de fundo na celulas
+                        backgroun - define a imagem no fundo da celula
+
+         -->
+
+         <table width="500" height="500px" border="0" cellpadding="30" cellspacing="10" >
+
+            <tr height="250">  <!-- linha 01 -->
+                <td width="250" bgcolor="blue"><!-- coluna 01 da linha 01 -->
+                    Octavio
+                </td>
+                <td width="250" bgcolor="red"><!-- colina 02 da linha 01-->
+                </td>
+            </tr> <!-- Fim da linha 01 -->
+
+            <tr height="250"> <!-- linha 02 -->
+                <td width="250" bgcolor="red"> <!-- coluna 01 da linha 02 -->
+                </td>
+                <td width="250" bgcolor="blue"> <!-- coluna 02 da linha 02 -->
+                </td>
+            </tr><!-- fim da linha 02 -->
+
+         </table> 
+
+
+         <h1>Logica do professor</h1>
+
+
+         <!-- Exemplo da tabela da Wireframe -->
+         <table width="1200" height="600" border="10" bgcolor="#4d7485">
+            <tr>
+                <td width="400"><!-- col 1 p/ criar a estrutura -->
+                    
+                    <!-- Tabela que divide essa celula em coluna de imagem e de txt -->
+                    <table width="100%" height="100%" border="0" cellpadding="20">
+                        <tr>
+                            <td width="30%" align="center" valign="middle" > <!-- col 1 imgaem-->
+
+                                <table  width="90%" height="50%" border="0" bgcolor="#4s167b">
+                                    <tr heigth="50%"> <!-- Linha 01 img01 -->
+                                        <td>
+                                            <img src="imagens/bomdia.png" alt="" width="150" height="150">
+                                        </td>
+                                    </tr>
+                                    <tr heigth="50%"> <!-- Linha 02 img02 -->
+                                        <td>
+                                            <img src="imagens/bomdia.png" alt="" width="150" height="150">
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </td>
+                            <td width="70%" bgcolor="#b215d"> <!-- col 2 Texto-->
+                                <h2>
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nam praesentium quis unde nesciunt deserunt? Odio laboriosam et, fugiat velit esse aspernatur totam, laudantium eum aliquam ipsa vero temporibus repellat.
+                                    </p>
+                                </h2>
+                            </td>
+                        </tr>
+                    </table>
+
+
+
+
+                </td>
+
+                <td width="800"><!-- col 2 p/ criar a estrutura -->
+                    <table width="100%" height="100%" border="0" bgcolor="#ad7115">
+
+                        <tr height="70%"> <!-- Primeira Linha -->
+                            <td valign="top"> <!--Para texto-->
+                                <h1>
+                                    Isso é um layout
+                                </h1>
+                                <h2>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aliquid. Quam laudantium rerum, similique molestias est dolores dicta necessitatibus, saepe quo nihil quod! Iste impedit laudantium voluptates earum expedita. Non.
+                                    </p>
+                                </h2>
+                            </td>
+                        </tr>
+
+                        <tr height="30%"> <!-- Segunda Linha -->
+                            <td>   <!--Para imagens-->
+                                <table width="100%" height="100%" border="0" bgcolor="#a1a1a12">
+                                    <tr>
+                                        <td width="16%">
+                                            <img src="imagens/download.png" alt="hcmcghj" width="200" height="300">   
+                                        </td>
+
+                                        <td width="17%">   
+                                            <img src="imagens/download.png" alt="" width="200" height="300">
+                                        </td>
+
+                                        <td width="17%">   
+                                            <img src="imagens/download.png" alt="" width="200" height="300">
+                                        </td>
+
+                                        <td width="17%">   
+                                            <img src="imagens/download.png" alt="" width="200" height="300">
+                                        </td>
+
+                                        <td width="17%">   
+                                            <img src="imagens/download.png" alt="" width="200" height="300">
+                                        </td>
+
+                                        <td width="16%">   
+                                            <img src="imagens/download.png" alt="" width="200" height="300">
+                                        </td>
+                                        
+                                        
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+
+        <h2>Outra tabela</h2>
+
+        <table width="1200" height="600" border="5" bgcolor="lightblue">
+            <tr height="33%">
+                <td width="25%" colspan="2"></td>
+                
+                <td width="25%"></td>
+                <td width="25%"></td>
+            </tr>
+
+            <tr height="34%">
+                
+                <td width="25%"></td>
+                <td width="25%" colspan="2"></td>
+                <td width="25%"></td>
+            </tr>
+
+            <tr height="33%">
+                <td width="25%"></td>
+                <td width="25%"></td>
+                <td width="25%"></td>
+                <td width="25%"></td>
+            </tr>
+
+            
+        </table>
+
+
+    </body>
+</html>
+
+<html>
+    <head>
+        <title>Aula 05</title>
+    </head>
+    <body>
+
+        <!-- 
+            <table> - define o inicio de uma tabela 
+                -Propriedades da Table
+                    <table width> - define a largura de uma tabela
+                            height - define a altura de uma tabela
+                            border - define a espessura de uma borda
+                            cellspacing - define um espaçamento entre as celulas
+                            cellpadding - define um espaçamento interno entre as celulas
+                            bgcolor - define uma cor de fundo da tabela inteira
+                            backgroun - define a imagem no fundo da tabela
+                        
+            </table> - difine o final de uma tabela
+
+                <tr> - define a criação de uma linha
+                    -Propriedades da linha
+                    -Pode no max aumentar o tamanho da linha
+                    <tr height> - define o tamanho da linha
+                    bgcolor - define uma cor de fundo na linha
+                    backgroun - define a imagem no fundo da linha
+
+                    -Dentro da tag tr
+                    <td> - define a criação de uma coluna (celula)
+                        -A unica propriedade possivel é aumentar/diminuir a largura da coluna
+                        <td width> - define a largura da coluna
+                        bgcolor - define uma cor de fundo na celulas
+                        backgroun - define a imagem no fundo da celula
+
+         -->
+
+         <table width="500" height="500px" border="0" cellpadding="30" cellspacing="10" >
+
+            <tr height="250">  <!-- linha 01 -->
+                <td width="250" bgcolor="blue"><!-- coluna 01 da linha 01 -->
+                    Octavio
+                </td>
+                <td width="250" bgcolor="red"><!-- colina 02 da linha 01-->
+                </td>
+            </tr> <!-- Fim da linha 01 -->
+
+            <tr height="250"> <!-- linha 02 -->
+                <td width="250" bgcolor="red"> <!-- coluna 01 da linha 02 -->
+                </td>
+                <td width="250" bgcolor="blue"> <!-- coluna 02 da linha 02 -->
+                </td>
+            </tr><!-- fim da linha 02 -->
+
+         </table> 
+
+
+         <h1>Logica do professor</h1>
+
+
+         <!-- Exemplo da tabela da Wireframe -->
+         <table width="1200" height="600" border="10" bgcolor="#4d7485">
+            <tr>
+                <td width="400"><!-- col 1 p/ criar a estrutura -->
+                    
+                    <!-- Tabela que divide essa celula em coluna de imagem e de txt -->
+                    <table width="100%" height="100%" border="0" cellpadding="20">
+                        <tr>
+                            <td width="30%" align="center" valign="middle" > <!-- col 1 imgaem-->
+
+                                <table  width="90%" height="50%" border="0" bgcolor="#4s167b">
+                                    <tr heigth="50%"> <!-- Linha 01 img01 -->
+                                        <td>
+                                            <img src="imagens/bomdia.png" alt="" width="150" height="150">
+                                        </td>
+                                    </tr>
+                                    <tr heigth="50%"> <!-- Linha 02 img02 -->
+                                        <td>
+                                            <img src="imagens/bomdia.png" alt="" width="150" height="150">
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </td>
+                            <td width="70%" bgcolor="#b215d"> <!-- col 2 Texto-->
+                                <h2>
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nam praesentium quis unde nesciunt deserunt? Odio laboriosam et, fugiat velit esse aspernatur totam, laudantium eum aliquam ipsa vero temporibus repellat.
+                                    </p>
+                                </h2>
+                            </td>
+                        </tr>
+                    </table>
+
+
+
+
+                </td>
+
+                <td width="800"><!-- col 2 p/ criar a estrutura -->
+                    <table width="100%" height="100%" border="0" bgcolor="#ad7115">
+
+                        <tr height="70%"> <!-- Primeira Linha -->
+                            <td valign="top"> <!--Para texto-->
+                                <h1>
+                                    Isso é um layout
+                                </h1>
+                                <h2>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aliquid. Quam laudantium rerum, similique molestias est dolores dicta necessitatibus, saepe quo nihil quod! Iste impedit laudantium voluptates earum expedita. Non.
+                                    </p>
+                                </h2>
+                            </td>
+                        </tr>
+
+                        <tr height="30%"> <!-- Segunda Linha -->
+                            <td>   <!--Para imagens-->
+                                <table width="100%" height="100%" border="0" bgcolor="#a1a1a12">
+                                    <tr>
+                                        <td width="16%">
+                                            <img src="imagens/download.png" alt="hcmcghj" width="200" height="300">   
+                                        </td>
+
+                                        <td width="17%">   
+                                            <img src="imagens/download.png" alt="" width="200" height="300">
+                                        </td>
+
+                                        <td width="17%">   
+                                            <img src="imagens/download.png" alt="" width="200" height="300">
+                                        </td>
+
+                                        <td width="17%">   
+                                            <img src="imagens/download.png" alt="" width="200" height="300">
+                                        </td>
+
+                                        <td width="17%">   
+                                            <img src="imagens/download.png" alt="" width="200" height="300">
+                                        </td>
+
+                                        <td width="16%">   
+                                            <img src="imagens/download.png" alt="" width="200" height="300">
+                                        </td>
+                                        
+                                        
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+
+        <h2>Outra tabela</h2>
+
+        <table width="1200" height="600" border="5" bgcolor="lightblue">
+            <tr height="33%">
+                <td width="25%" colspan="2"></td>
+                
+                <td width="25%"></td>
+                <td width="25%"></td>
+            </tr>
+
+            <tr height="34%">
+                
+                <td width="25%"></td>
+                <td width="25%" colspan="2"></td>
+                <td width="25%"></td>
+            </tr>
+
+            <tr height="33%">
+                <td width="25%"></td>
+                <td width="25%"></td>
+                <td width="25%"></td>
+                <td width="25%"></td>
+            </tr>
+
+            
+        </table>
+
+
+    </body>
+</html>

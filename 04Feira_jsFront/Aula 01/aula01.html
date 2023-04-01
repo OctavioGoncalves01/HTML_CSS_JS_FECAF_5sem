@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 01</title>
+</head>
+<body>
+    <h1 id="mensagem">
+        Seja bem vindo ao meu site, <span id="nome"></span>.
+    </h1>
+</body>
+    <script>
+        var resposta = window.confirm("Voce deseja entrar no meu site?");
+
+        if (resposta){
+            var nomeUsu = window.prompt("Digite seu nome: ");
+            window.document.getElementById("nome").innerText = nomeUsu;
+        }else{
+            window.document.getElementById("mensagem").innerText = "usuario não identificado";
+        }
+    </script>
+</html>
